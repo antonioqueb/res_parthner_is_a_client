@@ -8,7 +8,9 @@
             <xpath expr="//field[@name='category_id']" position="after">
                 <!-- Usamos un div para asegurarnos de que el checkbox no rompa la disposición existente -->
                 <div class="o_row">
+                 <group>
                     <field name="x_is_a_client"/>
+                </group>
                 </div>
             </xpath>
         </field>
