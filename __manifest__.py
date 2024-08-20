@@ -1,7 +1,8 @@
 {
-    'name': 'Res Partner Is A Client',
+    'name': 'Contacto Prioritario',
     'version': '1.0',
     'category': 'Contacts',
+    'author':'Alphaqueb Consulting S.A.S.',
     'summary': 'Extend Res Partner to indicate if they have been a client.',
     'depends': ['base', 'contacts'],  # Dependencias necesarias
     'data': [
