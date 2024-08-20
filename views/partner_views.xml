@@ -4,10 +4,10 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <!-- Localizamos el campo 'email' y agregamos el checkbox debajo -->
-            <xpath expr="//field[@name='email']" position="after">
-                <!-- Usamos un group para alinearlos verticalmente en una nueva fila -->
-                <group colspan="4" nolabel="1">
+            <!-- Localizamos el campo 'vat' y agregamos el checkbox debajo -->
+            <xpath expr="//field[@name='vat']" position="after">
+                <!-- Añadimos el checkbox debajo del campo vat (RFC) -->
+                <group>
                     <field name="x_is_a_client" class="o_form_field"/>
                 </group>
             </xpath>
