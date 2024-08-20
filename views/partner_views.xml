@@ -4,12 +4,12 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <!-- Localizamos el último campo del grupo y agregamos el checkbox justo debajo -->
+            <!-- Localizamos el campo 'category_id' y añadimos el checkbox debajo sin romper el diseño -->
             <xpath expr="//field[@name='category_id']" position="after">
-                <!-- Añadimos el checkbox debajo del último campo del grupo -->
-                <group>
-                    <field name="x_is_a_client" class="o_form_field"/>
-                </group>
+                <!-- Usamos un div para asegurarnos de que el checkbox no rompa la disposición existente -->
+                <div class="o_row">
+                    <field name="x_is_a_client"/>
+                </div>
             </xpath>
         </field>
     </record>
