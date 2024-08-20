@@ -6,12 +6,10 @@
         <field name="arch" type="xml">
             <!-- Localizamos el campo 'category_id' y añadimos el checkbox debajo sin romper el diseño -->
             <xpath expr="//field[@name='category_id']" position="after">
-                <!-- Usamos un div para asegurarnos de que el checkbox no rompa la disposición existente -->
-                <div class="o_row">
-                 <group>
+                <!-- Añadimos el checkbox en una nueva fila correctamente alineado -->
+                <group>
                     <field name="x_is_a_client"/>
                 </group>
-                </div>
             </xpath>
         </field>
     </record>
