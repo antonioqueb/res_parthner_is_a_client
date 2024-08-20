@@ -4,9 +4,9 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <!-- Localizamos el campo 'category_id' y añadimos el checkbox debajo sin romper el diseño -->
-            <xpath expr="//field[@name='category_id']" position="after">
-                <!-- Añadimos el checkbox en una nueva fila correctamente alineado -->
+            <!-- Localizamos el final del último grupo existente y agregamos el checkbox en una nueva fila -->
+            <xpath expr="//group[last()]" position="after">
+                <!-- Añadimos el checkbox en una nueva fila sin interferir con el diseño existente -->
                 <group>
                     <field name="x_is_a_client"/>
                 </group>
