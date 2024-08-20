@@ -6,8 +6,10 @@
         <field name="arch" type="xml">
             <!-- Localizamos el campo 'email' y agregamos el checkbox debajo -->
             <xpath expr="//field[@name='email']" position="after">
-                <!-- Añadimos el checkbox con su etiqueta -->
-                <field name="x_is_a_client" class="o_form_field"/>
+                <!-- Usamos un grupo con columnas definidas para la disposición vertical -->
+                <group>
+                    <field name="x_is_a_client" class="o_form_field"/>
+                </group>
             </xpath>
         </field>
     </record>
