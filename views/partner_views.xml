@@ -4,12 +4,13 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <!-- Localizamos el campo 'email' -->
+            <!-- Localizamos el campo 'email' y agregamos el checkbox debajo -->
             <xpath expr="//field[@name='email']" position="after">
-                <!-- Insertamos un nuevo grupo para alinear los campos verticalmente -->
+                <!-- Usamos un grupo para garantizar la alineación vertical -->
                 <group>
-                    <!-- El campo de selección con una etiqueta que describa su propósito -->
-                    <field name="x_client_status"/>
+                    <!-- Añadimos el checkbox con su texto explicativo -->
+                    <field name="x_is_a_client"/>
+                    <label for="x_is_a_client" string="Marque si este contacto ha sido cliente en el pasado."/>
                 </group>
             </xpath>
         </field>
