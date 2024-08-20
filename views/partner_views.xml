@@ -6,8 +6,11 @@
         <field name="arch" type="xml">
             <!-- Localizamos el campo 'email' -->
             <xpath expr="//field[@name='email']" position="after">
-                <!-- Añadimos nuestro nuevo checkbox debajo del campo de email -->
-                <field name="x_is_a_client"/>
+                <!-- Insertamos un nuevo grupo para alinear los campos verticalmente -->
+                <group>
+                    <!-- El campo de selección con una etiqueta que describa su propósito -->
+                    <field name="x_client_status"/>
+                </group>
             </xpath>
         </field>
     </record>
