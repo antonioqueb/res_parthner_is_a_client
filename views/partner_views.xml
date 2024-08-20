@@ -10,7 +10,6 @@
                 <group>
                     <!-- Añadimos el checkbox con su texto explicativo -->
                     <field name="x_is_a_client"/>
-                    <label for="x_is_a_client" string="Marque si este contacto ha sido cliente en el pasado."/>
                 </group>
             </xpath>
         </field>
